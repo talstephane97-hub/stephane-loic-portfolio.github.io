@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fom Taliedje Stephane Loic — Portfolio Big Data & Cybersécurité</title>
+<meta name="description" content="Portfolio de Fom Taliedje Stephane Loic, étudiant en MBA Big Data & IA au MBA ESG Paris. Spécialisé en Data Analysis et Cybersécurité. Disponible en alternance Septembre 2026.">
+<meta property="og:title" content="Stephane Loic — Big Data & Cybersécurité">
+<meta property="og:description" content="Étudiant MBA Big Data & IA — Recherche alternance Île-de-France">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html { scroll-behavior: smooth; }
+::selection { background: rgba(59,130,246,0.4); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #020617; }
+::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+body { font-family: 'Outfit', sans-serif; background: linear-gradient(180deg, #020617 0%, #0f172a 30%, #020617 100%); color: #fff; margin: 0; }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-30px); } }
+@keyframes pulse { 0%,100% { opacity: 0.1; transform: translate(-50%,-50%) scale(1); } 50% { opacity: 0.2; transform: translate(-50%,-50%) scale(1.1); } }
+.fade-in { opacity: 0; transform: translateY(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.glass { backdrop-filter: blur(12px); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 1rem; }
+.glass-hover:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
+.glass, .glass-hover { transition: all 0.3s ease; }
+nav.scrolled { backdrop-filter: blur(20px); background: rgba(2,6,23,0.8); border-bottom: 1px solid rgba(255,255,255,0.05); box-shadow: 0 25px 50px rgba(30,58,138,0.1); }
+.glow { position: absolute; inset: -8px; border-radius: 9999px; opacity: 0.4; filter: blur(20px); background: linear-gradient(135deg, #3b82f6, #06b6d4); transition: opacity 0.7s; }
+.glow:hover, .group:hover .glow { opacity: 0.6; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.1); color: #94a3b8; background: rgba(255,255,255,0.05); }
+.highlight-dot { border-color: #3b82f6; background: rgba(59,130,246,0.3); }
+.normal-dot { border-color: #475569; background: rgba(71,85,105,0.2); }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+<a href="#hero" class="text-lg font-bold tracking-wider" style="color:#60a5fa">S<span class="text-white">.LOIC</span></a>
+<div class="hidden md:flex gap-1" id="desktop-nav">
+<a href="#about" class="nav-link px-3 py-1.5 rounded-lg text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-300">À propos</a>
+<a href="#stack" class="nav-link px-3 py-1.5 rounded-lg text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-300">Compétences</a>
+<a href="#experience" class="nav-link px-3 py-1.5 rounded-lg text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-300">Expériences</a>
+<a href="#projects" class="nav-link px-3 py-1.5 rounded-lg text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-300">Projets</a>
+<a href="#education" class="nav-link px-3 py-1.5 rounded-lg text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-300">Formation</a>
+<a href="#contact" class="nav-link px-3 py-1.5 rounded-lg text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-300">Contact</a>
+</div>
+<button class="md:hidden text-slate-300 p-2" id="burger" aria-label="Menu">
+<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+</div>
+<div class="hidden md:hidden backdrop-blur-xl bg-slate-950/95 border-t border-white/5 px-4 pb-4" id="mobile-menu">
+<a href="#about" class="mob-link block py-3 text-slate-300 hover:text-blue-400 border-b border-white/5">À propos</a>
+<a href="#stack" class="mob-link block py-3 text-slate-300 hover:text-blue-400 border-b border-white/5">Compétences</a>
+<a href="#experience" class="mob-link block py-3 text-slate-300 hover:text-blue-400 border-b border-white/5">Expériences</a>
+<a href="#projects" class="mob-link block py-3 text-slate-300 hover:text-blue-400 border-b border-white/5">Projets</a>
+<a href="#education" class="mob-link block py-3 text-slate-300 hover:text-blue-400 border-b border-white/5">Formation</a>
+<a href="#contact" class="mob-link block py-3 text-slate-300 hover:text-blue-400">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+<div class="absolute w-96 h-96 rounded-full opacity-20 blur-3xl" style="background:radial-gradient(circle,#3b82f6,transparent);top:10%;left:-5%;animation:float 8s ease-in-out infinite"></div>
+<div class="absolute w-80 h-80 rounded-full opacity-15 blur-3xl" style="background:radial-gradient(circle,#06b6d4,transparent);bottom:10%;right:-5%;animation:float 10s ease-in-out infinite reverse"></div>
+<div class="absolute w-64 h-64 rounded-full opacity-10 blur-3xl" style="background:radial-gradient(circle,#8b5cf6,transparent);top:50%;left:50%;transform:translate(-50%,-50%);animation:pulse 6s ease-in-out infinite"></div>
+<div class="z-10 max-w-5xl w-full px-4 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+<div class="flex-1 text-center md:text-left order-2 md:order-1">
+<div class="fade-in"><div class="inline-block px-4 py-1.5 rounded-full text-xs font-medium tracking-wider mb-6 border" style="background:rgba(59,130,246,0.1);border-color:rgba(59,130,246,0.3);color:#60a5fa">🎓 DISPONIBLE EN ALTERNANCE — SEPTEMBRE 2026</div></div>
+<div class="fade-in" style="transition-delay:0.15s"><h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-1">FOM TALIEDJE</h1><h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4" style="background:linear-gradient(90deg,#60a5fa,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent">STEPHANE LOIC</h1></div>
+<div class="fade-in" style="transition-delay:0.3s"><p class="text-base sm:text-lg md:text-xl font-light mb-2 text-slate-400">Big Data & Intelligence Artificielle · Cybersécurité</p></div>
+<div class="fade-in" style="transition-delay:0.45s"><p class="text-slate-400 max-w-lg mb-8 text-sm sm:text-base leading-relaxed">Étudiant en MBA Big Data & IA au MBA ESG Paris, je fais le pont entre l'analyse de données et la sécurité informatique pour concevoir des solutions robustes et intelligentes.</p></div>
+<div class="fade-in" style="transition-delay:0.6s"><div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<a href="#projects" class="px-6 py-3 rounded-xl font-medium text-white text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">Voir mes projets ↓</a>
+<a href="#contact" class="glass px-6 py-3 rounded-xl font-medium text-sm text-slate-300 hover:text-white transition-all duration-300 hover:scale-105">Me contacter</a>
+</div></div>
+</div>
+<div class="fade-in order-1 md:order-2 flex-shrink-0" style="transition-delay:0.2s">
+<div class="relative group">
+<div class="glow"></div>
+<div class="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-2" style="border-color:rgba(59,130,246,0.4)">
+<img src="data:image/jpeg;base64,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" alt="Fom Taliedje Stephane Loic" class="w-full h-full object-cover">
+</div></div></div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 sm:py-28 px-4">
+<div class="max-w-5xl mx-auto">
+<div class="fade-in text-center mb-4"><span class="text-xs uppercase tracking-widest text-blue-400 font-medium">Mon parcours</span><h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">À propos</h2><div class="mx-auto mt-4 w-16 h-1 rounded-full" style="background:linear-gradient(90deg,#3b82f6,#06b6d4)"></div></div>
+<div class="grid md:grid-cols-5 gap-8 mt-12">
+<div class="fade-in md:col-span-3"><div class="glass p-6 sm:p-8">
+<p class="text-slate-300 leading-relaxed mb-4 text-sm sm:text-base">Diplômé en <strong class="text-blue-400">Cybersécurité</strong> à l'ICT University de Yaoundé, je poursuis aujourd'hui un <strong class="text-blue-400">MBA Big Data & IA</strong> au MBA ESG Paris. Cette double compétence me permet d'aborder les données avec une rigueur sécuritaire et une vision analytique.</p>
+<p class="text-slate-300 leading-relaxed mb-4 text-sm sm:text-base">Mon stage à la Direction Générale des Impôts m'a confronté à l'analyse de logs en temps réel et à la détection de vulnérabilités critiques. Chez AXIS Sarl, j'ai développé mes compétences en coordination et reporting. Ces expériences m'ont forgé une capacité d'adaptation solide.</p>
+<p class="text-slate-400 leading-relaxed text-sm sm:text-base">Aujourd'hui, je cherche une <strong class="text-cyan-400">alternance en Île-de-France</strong> à la croisée de la Data et de la Cybersécurité, pour contribuer à des projets à fort impact dès septembre 2026.</p>
+</div></div>
+<div class="fade-in md:col-span-2" style="transition-delay:0.2s"><div class="glass p-6 sm:p-8 h-full flex flex-col justify-between"><div>
+<h3 class="text-white font-semibold mb-4 text-sm">INFOS RAPIDES</h3>
+<div class="mb-3"><span class="text-slate-500 text-xs uppercase tracking-wider block">Localisation</span><span class="text-slate-300 text-sm">Achères (78), Île-de-France</span></div>
+<div class="mb-3"><span class="text-slate-500 text-xs uppercase tracking-wider block">Formation</span><span class="text-slate-300 text-sm">MBA Big Data & IA — MBA ESG Paris</span></div>
+<div class="mb-3"><span class="text-slate-500 text-xs uppercase tracking-wider block">Background</span><span class="text-slate-300 text-sm">Licence Cybersécurité — ICT University</span></div>
+<div class="mb-3"><span class="text-slate-500 text-xs uppercase tracking-wider block">Recherche</span><span class="text-slate-300 text-sm">Alternance Data / Cyber — Sept. 2026</span></div>
+</div>
+<div class="mt-6">
+<h3 class="text-white font-semibold mb-3 text-sm">RETROUVEZ-MOI</h3>
+<div class="flex flex-col gap-2">
+<a href="https://www.linkedin.com/in/stephane-lo%C3%AFc-fom-taliedje-265091398/" target="_blank" rel="noopener noreferrer" class="glass glass-hover flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-blue-400 transition-all duration-300 group">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+<span class="text-sm group-hover:text-blue-400">LinkedIn</span>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+</a>
+<a href="https://github.com/talstephane97-hub" target="_blank" rel="noopener noreferrer" class="glass glass-hover flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-blue-400 transition-all duration-300 group">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+<span class="text-sm group-hover:text-blue-400">GitHub</span>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+</a>
+<a href="https://www.instagram.com/_stephane.loic?igsh=cTR0b2dld3ZjaXNq" target="_blank" rel="noopener noreferrer" class="glass glass-hover flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-pink-400 transition-all duration-300 group">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+<span class="text-sm group-hover:text-pink-400">Instagram</span>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+</a>
+<a href="mailto:loicfom@gmail.com" class="glass glass-hover flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-cyan-400 transition-all duration-300 group">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+<span class="text-sm group-hover:text-cyan-400">loicfom@gmail.com</span>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+</a>
+</div>
+</div></div></div>
+</div></div>
+</section>
+
+<!-- TECH STACK -->
+<section id="stack" class="py-20 sm:py-28 px-4">
+<div class="max-w-5xl mx-auto">
+<div class="fade-in text-center mb-4"><span class="text-xs uppercase tracking-widest text-blue-400 font-medium">Tech Stack</span><h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Compétences</h2><div class="mx-auto mt-4 w-16 h-1 rounded-full" style="background:linear-gradient(90deg,#3b82f6,#06b6d4)"></div></div>
+<div class="grid sm:grid-cols-2 gap-6 mt-12">
+<div class="fade-in glass glass-hover p-6"><h3 class="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-4">Data & IA</h3><div class="flex flex-wrap gap-2">
+<span class="tag">🐍 Python</span><span class="tag">📊 Pandas</span><span class="tag">🧠 Scikit-learn</span><span class="tag">🔥 PyTorch</span><span class="tag">⚙️ TensorFlow</span><span class="tag">📈 Power BI</span><span class="tag">📉 Tableau</span><span class="tag">🎨 Matplotlib</span>
+</div></div>
+<div class="fade-in glass glass-hover p-6" style="transition-delay:0.1s"><h3 class="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-4">Base de données</h3><div class="flex flex-wrap gap-2">
+<span class="tag">🗄️ SQL</span><span class="tag">⭐ Modélisation Star Schema</span><span class="tag">📐 DAX</span>
+</div></div>
+<div class="fade-in glass glass-hover p-6" style="transition-delay:0.2s"><h3 class="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-4">Cybersécurité</h3><div class="flex flex-wrap gap-2">
+<span class="tag">🔍 ELK Stack</span><span class="tag">🧅 Security Onion</span><span class="tag">💻 VMware</span><span class="tag">🔐 Chiffrement AES/RSA</span><span class="tag">🛡️ Argon2id</span>
+</div></div>
+<div class="fade-in glass glass-hover p-6" style="transition-delay:0.3s"><h3 class="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-4">Dev & Outils</h3><div class="flex flex-wrap gap-2">
+<span class="tag">🌿 Git / GitHub</span><span class="tag">☁️ GCP / Vertex AI</span><span class="tag">⚡ FastAPI</span><span class="tag">📄 ReportLab</span><span class="tag">🟢 Node.js</span>
+</div></div>
+</div></div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-20 sm:py-28 px-4">
+<div class="max-w-5xl mx-auto">
+<div class="fade-in text-center mb-4"><span class="text-xs uppercase tracking-widest text-blue-400 font-medium">Parcours professionnel</span><h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Expériences</h2><div class="mx-auto mt-4 w-16 h-1 rounded-full" style="background:linear-gradient(90deg,#3b82f6,#06b6d4)"></div></div>
+<div class="mt-12 relative">
+<div class="hidden md:block absolute left-8 top-0 bottom-0 w-px" style="background:linear-gradient(to bottom,transparent,rgba(59,130,246,0.3) 10%,rgba(59,130,246,0.3) 90%,transparent)"></div>
+<div class="space-y-6">
+
+<div class="fade-in flex gap-6"><div class="hidden md:flex flex-col items-center"><div class="w-4 h-4 rounded-full border-2 mt-6 flex-shrink-0 normal-dot"></div></div>
+<div class="flex-1 glass glass-hover p-6"><div class="flex flex-wrap items-start justify-between gap-2 mb-2"><div><h3 class="text-white font-semibold text-base">Agent de Service Hôtelier (Intérim)</h3><p class="text-slate-400 text-sm">Maison de retraite Champsfleur — Le Mesnil-le-Roi (78)</p></div><span class="text-xs text-slate-500 whitespace-nowrap px-2 py-1 rounded-md bg-white/5">Fév. 2026 — Présent</span></div>
+<p class="text-slate-300 text-sm leading-relaxed mb-3">Service en salle, respect des régimes alimentaires et protocoles sanitaires. Distribution quotidienne, débarrassage et nettoyage selon les normes d'hygiène.</p>
+<div class="mb-3"><span class="text-xs text-cyan-400 font-medium">Soft Skills transférables : </span><span class="text-xs text-slate-400">Gestion du stress · Organisation · Sens du service · Rigueur sanitaire</span></div>
+<div class="flex flex-wrap gap-1.5"><span class="tag">Soft Skills</span><span class="tag">Service</span></div>
+</div></div>
+
+<div class="fade-in flex gap-6" style="transition-delay:0.1s"><div class="hidden md:flex flex-col items-center"><div class="w-4 h-4 rounded-full border-2 mt-6 flex-shrink-0 highlight-dot"></div></div>
+<div class="flex-1 glass glass-hover p-6 border-blue-500/20"><div class="flex flex-wrap items-start justify-between gap-2 mb-2"><div><h3 class="text-white font-semibold text-base">Stagiaire Assistant de Direction</h3><p class="text-slate-400 text-sm">AXIS Sarl — Yaoundé, Cameroun</p></div><span class="text-xs text-slate-500 whitespace-nowrap px-2 py-1 rounded-md bg-white/5">Mai — Sep. 2025</span></div>
+<p class="text-slate-300 text-sm leading-relaxed mb-3">Suivi de 10+ partenaires et fournisseurs externes. Mise en place d'un système de reporting ayant réduit le temps de traitement estimé de 30%.</p>
+<div class="flex flex-wrap gap-1.5"><span class="tag">Reporting</span><span class="tag">Gestion de projet</span><span class="tag">Coordination</span></div>
+</div></div>
+
+<div class="fade-in flex gap-6" style="transition-delay:0.2s"><div class="hidden md:flex flex-col items-center"><div class="w-4 h-4 rounded-full border-2 mt-6 flex-shrink-0 highlight-dot"></div></div>
+<div class="flex-1 glass glass-hover p-6 border-blue-500/20"><div class="flex flex-wrap items-start justify-between gap-2 mb-2"><div><h3 class="text-white font-semibold text-base">Stagiaire en Cybersécurité</h3><p class="text-slate-400 text-sm">Direction Générale des Impôts (DGI) — Yaoundé, Cameroun</p></div><span class="text-xs text-slate-500 whitespace-nowrap px-2 py-1 rounded-md bg-white/5">Oct. 2024 — Fév. 2025</span></div>
+<p class="text-slate-300 text-sm leading-relaxed mb-3">Analyse de centaines de logs quotidiens via ELK Stack. Identification de 2 vulnérabilités critiques. Hardening réseau sur VMware. Sensibilisation anti-phishing pour ~20 collaborateurs.</p>
+<div class="flex flex-wrap gap-1.5"><span class="tag">ELK</span><span class="tag">VMware</span><span class="tag">Analyse de logs</span><span class="tag">Sécurité réseau</span></div>
+</div></div>
+
+<div class="fade-in flex gap-6" style="transition-delay:0.3s"><div class="hidden md:flex flex-col items-center"><div class="w-4 h-4 rounded-full border-2 mt-6 flex-shrink-0 normal-dot"></div></div>
+<div class="flex-1 glass glass-hover p-6"><div class="flex flex-wrap items-start justify-between gap-2 mb-2"><div><h3 class="text-white font-semibold text-base">Barman / Caissier</h3><p class="text-slate-400 text-sm">Yaoundé, Cameroun</p></div><span class="text-xs text-slate-500 whitespace-nowrap px-2 py-1 rounded-md bg-white/5">Juin — Août 2022</span></div>
+<p class="text-slate-300 text-sm leading-relaxed mb-3">Accueil clientèle, gestion de caisse et service en environnement dynamique.</p>
+<div class="mb-3"><span class="text-xs text-cyan-400 font-medium">Soft Skills transférables : </span><span class="text-xs text-slate-400">Relation client · Rapidité d'exécution</span></div>
+<div class="flex flex-wrap gap-1.5"><span class="tag">Service client</span><span class="tag">Gestion de caisse</span></div>
+</div></div>
+
+</div></div></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 sm:py-28 px-4">
+<div class="max-w-5xl mx-auto">
+<div class="fade-in text-center mb-4"><span class="text-xs uppercase tracking-widest text-blue-400 font-medium">Focus IT & Data</span><h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Projets</h2><div class="mx-auto mt-4 w-16 h-1 rounded-full" style="background:linear-gradient(90deg,#3b82f6,#06b6d4)"></div></div>
+<div class="grid md:grid-cols-2 gap-6 mt-12">
+
+<div class="fade-in glass glass-hover p-6 h-full flex flex-col group relative overflow-hidden"><div class="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-500" style="background:#3b82f6"></div><div class="relative z-10 flex-1 flex flex-col"><span class="text-xs font-medium uppercase tracking-wider mb-2" style="color:#3b82f6">Cybersécurité</span><h3 class="text-white font-semibold text-base mb-3">CRYPTEX — Application de Chiffrement Hybride</h3><p class="text-slate-400 text-sm leading-relaxed flex-1 mb-4">Application full-stack de chiffrement hybride combinant AES-256-GCM, RSA-4096-OAEP et Argon2id pour la dérivation de clés. Backend FastAPI, frontend thématique cyber. Signatures RSA-PSS pour l'intégrité.</p><div class="flex flex-wrap gap-1.5"><span class="tag" style="border-color:#3b82f633;background:#3b82f610">Python</span><span class="tag" style="border-color:#3b82f633;background:#3b82f610">FastAPI</span><span class="tag" style="border-color:#3b82f633;background:#3b82f610">AES-256</span><span class="tag" style="border-color:#3b82f633;background:#3b82f610">RSA-4096</span><span class="tag" style="border-color:#3b82f633;background:#3b82f610">Argon2id</span></div></div></div>
+
+<div class="fade-in glass glass-hover p-6 h-full flex flex-col group relative overflow-hidden" style="transition-delay:0.08s"><div class="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-500" style="background:#06b6d4"></div><div class="relative z-10 flex-1 flex flex-col"><span class="text-xs font-medium uppercase tracking-wider mb-2" style="color:#06b6d4">Data & BI</span><h3 class="text-white font-semibold text-base mb-3">RAINFOREST — Modélisation BI & DAX</h3><p class="text-slate-400 text-sm leading-relaxed flex-1 mb-4">Construction complète d'un modèle sémantique en étoile (Star Schema) avec bibliothèque de mesures DAX : KPIs fondamentaux, analyse QoQ, Pareto 80/20. Scripts TMDL multi-versions et rapport Power BI 4 pages.</p><div class="flex flex-wrap gap-1.5"><span class="tag" style="border-color:#06b6d433;background:#06b6d410">Power BI</span><span class="tag" style="border-color:#06b6d433;background:#06b6d410">DAX</span><span class="tag" style="border-color:#06b6d433;background:#06b6d410">Star Schema</span><span class="tag" style="border-color:#06b6d433;background:#06b6d410">TMDL</span></div></div></div>
+
+<div class="fade-in glass glass-hover p-6 h-full flex flex-col group relative overflow-hidden" style="transition-delay:0.16s"><div class="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-500" style="background:#8b5cf6"></div><div class="relative z-10 flex-1 flex flex-col"><span class="text-xs font-medium uppercase tracking-wider mb-2" style="color:#8b5cf6">IA & Cybersécurité</span><h3 class="text-white font-semibold text-base mb-3">TD4 — Scénario IA Offensif / Défensif</h3><p class="text-slate-400 text-sm leading-relaxed flex-1 mb-4">Scénario hybride Red Team / Blue Team utilisant Transformer, GAN, VAE, réseaux bayésiens et systèmes experts. Livrable PDF + présentation 16 slides.</p><div class="flex flex-wrap gap-1.5"><span class="tag" style="border-color:#8b5cf633;background:#8b5cf610">Transformer</span><span class="tag" style="border-color:#8b5cf633;background:#8b5cf610">GAN</span><span class="tag" style="border-color:#8b5cf633;background:#8b5cf610">Bayesian Networks</span><span class="tag" style="border-color:#8b5cf633;background:#8b5cf610">Red Team</span></div></div></div>
+
+<div class="fade-in glass glass-hover p-6 h-full flex flex-col group relative overflow-hidden" style="transition-delay:0.24s"><div class="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-500" style="background:#10b981"></div><div class="relative z-10 flex-1 flex flex-col"><span class="text-xs font-medium uppercase tracking-wider mb-2" style="color:#10b981">Cloud & IA</span><h3 class="text-white font-semibold text-base mb-3">Vertex AI — Générateur de Taglines</h3><p class="text-slate-400 text-sm leading-relaxed flex-1 mb-4">Générateur de taglines propulsé par Gemini 2.5 Flash sur Google Cloud Vertex AI Studio. Prompts paramétrés avec few-shot examples pour une startup outdoor (Cymbal Direct).</p><div class="flex flex-wrap gap-1.5"><span class="tag" style="border-color:#10b98133;background:#10b98110">GCP</span><span class="tag" style="border-color:#10b98133;background:#10b98110">Vertex AI</span><span class="tag" style="border-color:#10b98133;background:#10b98110">Gemini</span><span class="tag" style="border-color:#10b98133;background:#10b98110">Prompt Engineering</span></div></div></div>
+
+<div class="fade-in glass glass-hover p-6 h-full flex flex-col group relative overflow-hidden md:col-span-2" style="transition-delay:0.32s"><div class="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-500" style="background:#f59e0b"></div><div class="relative z-10 flex-1 flex flex-col"><span class="text-xs font-medium uppercase tracking-wider mb-2" style="color:#f59e0b">Marketing & Dev</span><h3 class="text-white font-semibold text-base mb-3">SQUAD10 — Landing Pages Marketing Digital</h3><p class="text-slate-400 text-sm leading-relaxed flex-1 mb-4">Trois variantes de landing page pour un bootcamp fitness fictif : dark/neon-green, rouge agressif et crème empathique. Chaque variante accompagnée d'un PPTX de compte-rendu visuel.</p><div class="flex flex-wrap gap-1.5"><span class="tag" style="border-color:#f59e0b33;background:#f59e0b10">HTML/CSS</span><span class="tag" style="border-color:#f59e0b33;background:#f59e0b10">python-pptx</span><span class="tag" style="border-color:#f59e0b33;background:#f59e0b10">Copywriting</span><span class="tag" style="border-color:#f59e0b33;background:#f59e0b10">A/B Testing</span></div></div></div>
+
+</div></div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-20 sm:py-28 px-4">
+<div class="max-w-5xl mx-auto">
+<div class="fade-in text-center mb-4"><span class="text-xs uppercase tracking-widest text-blue-400 font-medium">Parcours académique</span><h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Formation</h2><div class="mx-auto mt-4 w-16 h-1 rounded-full" style="background:linear-gradient(90deg,#3b82f6,#06b6d4)"></div></div>
+<div class="grid md:grid-cols-2 gap-6 mt-12">
+<div class="fade-in glass glass-hover p-6 relative overflow-hidden"><div class="absolute top-3 right-3 px-2 py-0.5 rounded text-xs font-medium" style="background:rgba(59,130,246,0.15);color:#60a5fa">En cours</div><span class="text-xs text-slate-500">2025 — 2027</span><h3 class="text-white font-semibold mt-2 mb-1">MBA Big Data & IA (Chief Data Officer)</h3><p class="text-blue-400 text-sm mb-3">MBA ESG Paris</p><p class="text-slate-400 text-sm">Architecture Big Data, Machine Learning, DataViz, Programmation Python avancée</p></div>
+<div class="fade-in glass glass-hover p-6" style="transition-delay:0.15s"><span class="text-xs text-slate-500">2022 — 2025</span><h3 class="text-white font-semibold mt-2 mb-1">Licence en Cybersécurité</h3><p class="text-blue-400 text-sm mb-3">ICT University — Yaoundé, Cameroun</p><p class="text-slate-400 text-sm">Réseaux, systèmes, sécurité informatique, programmation</p></div>
+</div></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 sm:py-28 px-4">
+<div class="max-w-3xl mx-auto">
+<div class="fade-in text-center mb-4"><span class="text-xs uppercase tracking-widest text-blue-400 font-medium">Échangeons</span><h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Contact</h2><div class="mx-auto mt-4 w-16 h-1 rounded-full" style="background:linear-gradient(90deg,#3b82f6,#06b6d4)"></div></div>
+<div class="fade-in glass p-8 sm:p-10 mt-12 text-center" style="transition-delay:0.15s">
+<p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8 max-w-lg mx-auto">Une opportunité d'alternance, une question ou simplement envie d'échanger ? N'hésitez pas à me contacter directement.</p>
+<a href="mailto:loicfom@gmail.com?subject=Prise%20de%20contact%20—%20Portfolio" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-medium text-white text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+M'envoyer un email
+</a>
+<div class="mt-8 flex flex-wrap justify-center gap-4">
+<a href="https://www.linkedin.com/in/stephane-lo%C3%AFc-fom-taliedje-265091398/" target="_blank" rel="noopener noreferrer" class="glass glass-hover flex items-center gap-2 px-5 py-3 rounded-xl text-slate-400 hover:text-blue-400 transition-all duration-300 text-sm">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+LinkedIn
+</a>
+<a href="https://github.com/talstephane97-hub" target="_blank" rel="noopener noreferrer" class="glass glass-hover flex items-center gap-2 px-5 py-3 rounded-xl text-slate-400 hover:text-blue-400 transition-all duration-300 text-sm">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+GitHub
+</a>
+<a href="https://www.instagram.com/_stephane.loic?igsh=cTR0b2dld3ZjaXNq" target="_blank" rel="noopener noreferrer" class="glass glass-hover flex items-center gap-2 px-5 py-3 rounded-xl text-slate-400 hover:text-pink-400 transition-all duration-300 text-sm">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+Instagram
+</a>
+</div>
+</div></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/5 py-8 px-4">
+<div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-slate-500 text-xs">© 2026 FOM TALIEDJE STEPHANE LOIC. Tous droits réservés.</p>
+<div class="flex gap-4">
+<a href="https://www.linkedin.com/in/stephane-lo%C3%AFc-fom-taliedje-265091398/" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-blue-400 text-xs transition-colors">LinkedIn</a>
+<a href="https://github.com/talstephane97-hub" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-blue-400 text-xs transition-colors">GitHub</a>
+<a href="mailto:loicfom@gmail.com" class="text-slate-500 hover:text-blue-400 text-xs transition-colors">Email</a>
+</div></div>
+</footer>
+
+<script>
+// Navbar scroll effect
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Mobile menu toggle
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobile-menu');
+burger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+document.querySelectorAll('.mob-link').forEach(l => {
+  l.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+});
+
+// Fade-in on scroll — repeatable: animates every time element enters viewport
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      e.target.classList.add('visible');
+    } else {
+      e.target.classList.remove('visible');
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+// Active nav link
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+const secObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      navLinks.forEach(l => {
+        l.classList.toggle('text-blue-400', l.getAttribute('href') === '#' + e.target.id);
+        l.classList.toggle('bg-blue-500/10', l.getAttribute('href') === '#' + e.target.id);
+        if(l.getAttribute('href') !== '#' + e.target.id) {
+          l.classList.add('text-slate-400');
+        } else {
+          l.classList.remove('text-slate-400');
+        }
+      });
+    }
+  });
+}, { rootMargin: '-40% 0px -50% 0px' });
+sections.forEach(s => secObs.observe(s));
+
+
+</script>
+</body>
+</html>
